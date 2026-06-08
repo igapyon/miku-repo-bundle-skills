@@ -1,0 +1,4 @@
+# Optional OpenAI agent metadata for igapyon-miku-repo-bundle.
+# Remove this file if the target skill does not provide agent metadata.
+name: igapyon-miku-repo-bundle
+description: miku-repo-bundle repository reference bundle workflow
