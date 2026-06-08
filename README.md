@@ -63,6 +63,18 @@ execution should provide a temporary `PATH` shim to the bundled
 class index material before `miku-repo-bundle --class-index`. The
 `miku-text-bundle-java` runtime is intentionally not bundled in this repository.
 
+## Local Scratch Policy
+
+Use `workplace/` as the repository-local scratch area for temporary files,
+validation output, generated class indexes, temporary `PATH` shims, and local
+inspection artifacts created while operating this Agent Skill. The directory is
+ignored by Git except for `workplace/.gitkeep`.
+
+Move only intentional project files or release artifacts out of `workplace/`.
+Do not place scratch files in the repository root or under the skill directory
+unless they are meant to become tracked source, documentation, tests, or runtime
+artifacts.
+
 ## Runtime Artifacts
 
 The following received artifacts are expected under

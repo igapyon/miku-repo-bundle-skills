@@ -49,15 +49,19 @@ runtimes.
 
 ## Required First Checks
 
-1. Read `references/upstream.md`.
-2. Read `references/workflow.md`.
-3. Confirm the requested target repository, output directory, and options.
-4. Use the declared `miku-repo-bundle` Node.js CLI runtime artifact under
+1. Read `index.json` to discover the bundled reference files before reading
+   larger documents.
+2. Read `references/upstream.md`.
+3. Read `references/workflow.md`.
+4. Confirm the requested target repository, output directory, and options.
+5. Use the declared `miku-repo-bundle` Node.js CLI runtime artifact under
    `runtime/` when execution is requested.
-5. Provide a temporary `PATH` shim to the bundled `miku-text-bundle` runtime
+6. Provide a temporary `PATH` shim to the bundled `miku-text-bundle` runtime
    before running the full bundle operation.
-6. Use bundled `miku-javaclass2json-java` only when class index generation is
+7. Use bundled `miku-javaclass2json-java` only when class index generation is
    requested or useful.
+8. Put temporary files created for this workflow under the repository-local
+   `workplace/` directory.
 
 ## Core Workflow
 
@@ -80,6 +84,11 @@ runtimes.
 8. Summarize the output folder, text bundle files, artifact sidecar, class index
    inclusion, skipped files or warnings, and a suggested AI handoff prompt.
 
+Use `workplace/` for scratch files, temporary runtime shims, generated class
+indexes, trial outputs, and local inspection artifacts. Do not write temporary
+files to the repository root or skill source directories unless they are
+intentional tracked project files.
+
 ## Runtime Lookup
 
 Prefer runtime paths in this order:
@@ -94,6 +103,8 @@ Prefer runtime paths in this order:
 
 Read these only when needed:
 
+- [index.json](index.json) for machine-readable discovery of bundled Markdown
+  and JSON reference files
 - [references/INDEX.md](references/INDEX.md) for workflow reference files
 - [references/upstream.md](references/upstream.md) for the upstream anchor,
   compatibility source, and runtime artifact policy

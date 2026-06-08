@@ -6,6 +6,15 @@ TypeScript / Node.js `miku-repo-bundle` CLI and related local tools.
 This initial workflow is CLI-backed through received upstream runtime
 artifacts. The default runtime backend is `repoBundle`.
 
+## Scratch Workspace
+
+Create temporary files under the repository-local `workplace/` directory. This
+includes validation output, generated class indexes, temporary `PATH` shims,
+trial bundle outputs, and local inspection artifacts.
+
+Do not write scratch files to the repository root or skill source directories.
+Move only intentional project files or release artifacts out of `workplace/`.
+
 ## Inspect Repository
 
 Inspect the target repository and report:

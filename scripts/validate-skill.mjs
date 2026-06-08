@@ -14,6 +14,7 @@ const requiredFiles = [
   ".gitignore",
   ".github/workflows/release-build.yml",
   "skills/igapyon-miku-repo-bundle/SKILL.md",
+  "skills/igapyon-miku-repo-bundle/index.json",
   "skills/igapyon-miku-repo-bundle/agents/openai.yaml",
   "skills/igapyon-miku-repo-bundle/lib/runtime-artifacts.mjs",
   "skills/igapyon-miku-repo-bundle/references/INDEX.md",
