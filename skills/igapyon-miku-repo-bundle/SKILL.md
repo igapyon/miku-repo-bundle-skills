@@ -49,8 +49,8 @@ runtimes.
 
 ## Required First Checks
 
-1. Read `index.json` to discover the bundled reference files before reading
-   larger documents.
+1. Read `references/INDEX.md` to choose the workflow guidance needed for the
+   request. Use scoped filename or text search for other bundled material.
 2. Read `references/upstream.md`.
 3. Read `references/workflow.md`.
 4. Confirm the requested target repository, output directory, and options.
@@ -103,8 +103,6 @@ Prefer runtime paths in this order:
 
 Read these only when needed:
 
-- [index.json](index.json) for machine-readable discovery of bundled Markdown
-  and JSON reference files
 - [references/INDEX.md](references/INDEX.md) for workflow reference files
 - [references/upstream.md](references/upstream.md) for the upstream anchor,
   compatibility source, and runtime artifact policy

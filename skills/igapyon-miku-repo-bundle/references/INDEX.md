@@ -1,5 +1,8 @@
 # References
 
+Open the task-specific links below. For other material, search within this
+skill directory by filename or text.
+
 - [workflow.md](workflow.md): detailed `miku-repo-bundle` Agent Skill workflow
 - [upstream.md](upstream.md): upstream anchor, compatibility source, and runtime
   artifact policy
